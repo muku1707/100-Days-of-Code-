@@ -1,0 +1,29 @@
+//Write a program to find the HCF (GCD) of two numbers.
+
+#include <stdio.h>
+
+int main() {
+    int a, b, tempA, tempB, hcf;
+
+    printf("Enter first number: ");
+    scanf("%d", &a);
+
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    tempA = a;
+    tempB = b;
+
+    // Euclid's algorithm
+    while (tempB != 0) {
+        int temp = tempB;
+        tempB = tempA % tempB;
+        tempA = temp;
+    }
+
+    hcf = tempA;
+
+    printf("HCF (GCD) of %d and %d is: %d\n", a, b, hcf);
+
+    return 0;
+}
