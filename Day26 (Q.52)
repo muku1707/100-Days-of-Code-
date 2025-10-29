@@ -1,0 +1,40 @@
+//Write a program to print the following pattern:
+
+*
+
+*
+*
+*
+
+*
+*
+*
+*
+*
+
+*
+*
+*
+
+*
+
+#include <stdio.h>
+
+int main() {
+    // First single star
+    printf("*\n\n");
+
+    // Three stars
+    printf("*\n*\n*\n\n");
+
+    // Five stars
+    printf("*\n*\n*\n*\n*\n\n");
+
+    // Three stars again
+    printf("*\n*\n*\n\n");
+
+    // One star at the end
+    printf("*\n");
+
+    return 0;
+}
